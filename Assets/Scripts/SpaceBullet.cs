@@ -7,7 +7,7 @@ public class SpaceBullet : MonoBehaviour
     
 
     float speed = 0.5f;
-    public int damage = 1/10;
+    public int damage = 50;
 
     void Start()
     {

@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinScreenManager : MonoBehaviour
+public class MapManager : MonoBehaviour
 {
-   public void CloseGame()
-    {
-        
-        Application.Quit();
-    }
-
-   public void ReplayLevel()
-    {
+   public void Startlvl1() {
         SceneManager.LoadSceneAsync(ScoueIDS.LevelSceneID);
     }
+
+
 }

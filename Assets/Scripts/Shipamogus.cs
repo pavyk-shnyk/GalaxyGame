@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shipamogus : MonoBehaviour
 {
@@ -50,7 +51,9 @@ public class Shipamogus : MonoBehaviour
             hp -= bulletScript.damage;
             Destroy(otherObj);
             if (hp <= 0) {
+                 SceneManager.LoadSceneAsync(ScoueIDS.LoseSceneID);
                 Destroy(gameObject);
+                
             }
         }
     }
